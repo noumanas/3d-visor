@@ -1,0 +1,613 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.46",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                7,
+                8
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "group",
+            "rotation" : [
+                -1,
+                0,
+                0,
+                1.9470718370939721e-07
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "polySurface1068",
+            "rotation" : [
+                -1,
+                0,
+                0,
+                1.9470718370939721e-07
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "polySurface1069",
+            "rotation" : [
+                -1,
+                0,
+                0,
+                1.9470718370939721e-07
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "pasted__pasted__Plane.003"
+        },
+        {
+            "mesh" : 3,
+            "name" : "pasted__pasted__Rim"
+        },
+        {
+            "mesh" : 4,
+            "name" : "pasted__pasted__Screw"
+        },
+        {
+            "children" : [
+                3,
+                4,
+                5
+            ],
+            "name" : "pasted__group"
+        },
+        {
+            "children" : [
+                6
+            ],
+            "name" : "group1",
+            "rotation" : [
+                -1,
+                0,
+                0,
+                1.9470718370939721e-07
+            ],
+            "scale" : [
+                0.010468331165611744,
+                0.010468331165611744,
+                0.012930940836668015
+            ]
+        },
+        {
+            "mesh" : 5,
+            "name" : "polySurface1071",
+            "rotation" : [
+                -1,
+                0,
+                0,
+                1.9470718370939721e-07
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "pasted__pasted__Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.6045454740524292
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "lambert3",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.13286831974983215,
+                    0.13286831974983215,
+                    0.13286831974983215,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "pasted__pasted__Volkswagen_Touareg_Hybrid_Wheel_OBJ_wir_efa8e54",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "pasted__pasted__Volkswagen_Touareg_Hybrid_Wheel_OBJ_wir_c175b84",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5
+                    },
+                    "indices" : 6,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 7,
+                        "NORMAL" : 8,
+                        "TEXCOORD_0" : 9
+                    },
+                    "indices" : 10,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 11,
+                        "NORMAL" : 12,
+                        "TEXCOORD_0" : 13
+                    },
+                    "indices" : 14,
+                    "material" : 2
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 15,
+                        "NORMAL" : 16,
+                        "TEXCOORD_0" : 17
+                    },
+                    "indices" : 18,
+                    "material" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 19,
+                        "NORMAL" : 20,
+                        "TEXCOORD_0" : 21
+                    },
+                    "indices" : 22,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "DUELER A_T 697",
+            "uri" : "Textures/DUELER%20A_T%20697.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 943525,
+            "max" : [
+                6.565220355987549,
+                6.5607829093933105,
+                1.8842555284500122
+            ],
+            "min" : [
+                -6.561142921447754,
+                -6.561342239379883,
+                -1.8841359615325928
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 943525,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 943525,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 1258260,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 171012,
+            "max" : [
+                5.326302528381348,
+                4.464903831481934,
+                1.9060927629470825
+            ],
+            "min" : [
+                -5.326302528381348,
+                -4.444645881652832,
+                -1.9060927629470825
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 171012,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5125,
+            "count" : 186699,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 2583,
+            "max" : [
+                0.30879518389701843,
+                0.29129937291145325,
+                -0.8843258619308472
+            ],
+            "min" : [
+                -0.3134387135505676,
+                -0.27238529920578003,
+                -1.0302791595458984
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 2583,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 2583,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5123,
+            "count" : 11379,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 17603,
+            "max" : [
+                3.906148672103882,
+                3.9068193435668945,
+                1.2959849834442139
+            ],
+            "min" : [
+                -3.906148672103882,
+                -3.9068193435668945,
+                -1.2959848642349243
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 17603,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 17603,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5123,
+            "count" : 82740,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 360,
+            "max" : [
+                1.0923165082931519,
+                1.1286945343017578,
+                -0.7579099535942078
+            ],
+            "min" : [
+                -1.0859394073486328,
+                -0.9765762686729431,
+                -1.1114476919174194
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 16,
+            "componentType" : 5126,
+            "count" : 360,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 360,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5123,
+            "count" : 660,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5126,
+            "count" : 20304,
+            "max" : [
+                6.4296040534973145,
+                6.429568767547607,
+                1.8963868618011475
+            ],
+            "min" : [
+                -6.42964506149292,
+                -6.429521083831787,
+                -1.8963943719863892
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5126,
+            "count" : 20304,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 21,
+            "componentType" : 5126,
+            "count" : 20304,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 22,
+            "componentType" : 5123,
+            "count" : 79392,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 11322300,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11322300,
+            "byteOffset" : 11322300
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7548200,
+            "byteOffset" : 22644600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5033040,
+            "byteOffset" : 30192800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2052144,
+            "byteOffset" : 35225840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2052144,
+            "byteOffset" : 37277984
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 746796,
+            "byteOffset" : 39330128
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30996,
+            "byteOffset" : 40076924
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30996,
+            "byteOffset" : 40107920
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20664,
+            "byteOffset" : 40138916
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22758,
+            "byteOffset" : 40159580
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 211236,
+            "byteOffset" : 40182340
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 211236,
+            "byteOffset" : 40393576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 140824,
+            "byteOffset" : 40604812
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 165480,
+            "byteOffset" : 40745636
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4320,
+            "byteOffset" : 40911116
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4320,
+            "byteOffset" : 40915436
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2880,
+            "byteOffset" : 40919756
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1320,
+            "byteOffset" : 40922636
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 243648,
+            "byteOffset" : 40923956
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 243648,
+            "byteOffset" : 41167604
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 162432,
+            "byteOffset" : 41411252
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 158784,
+            "byteOffset" : 41573684
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 41732468,
+            "uri" : "DUELER A_T 697.bin"
+        }
+    ]
+}

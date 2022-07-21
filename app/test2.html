@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+<script type="module" src="../../three.js-master/examples/js/loaders/GLTFLoader.js"></script> -->
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+
+    canvas {
+        display: block;
+    }
+</style>
+
+
+<body>
+
+    <script type="module">
+        import * as THREE from '../../node_modules/three/build/three.module.js';
+        //import { OrbitControls } from '../../three.js-master/jsm/controls/OrbitControls.js';
+        import { GLTFLoader } from '../../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+        import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls.js';
+        import { DRACOLoader } from '../../node_modules/three/examples/jsm/loaders/DRACOLoader.js';
+        import { DomEvents } from './threex.domevents.js';
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(1100, window.innerWidth / window.innerHeight, 0.001, 900);
+        //STANDARD
+        // camera.position.z = 0.0099;
+        // camera.position.x = 0;
+        // camera.position.y = 0;
+
+        // //DUELER H-L400, deuler H005, dUELER HT840
+        // camera.position.z = 12;
+        // camera.position.x = 0;
+        // camera.position.y = 0;
+
+
+        var renderer = new THREE.WebGLRenderer({ antialias: true }, {alpha:true});
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor("#eeeeee")
+        document.body.appendChild(renderer.domElement);
+
+        // window.addEventListener('resize', function () {
+        //   var width = window.innerWidth;
+        //   var height = window.innerHeight;
+        //   renderer.setSize(width, height);
+        //   camera.aspect = width / height;
+        //   camera.updateProjectionMatrix();
+        // });
+
+        // STANDARD LIGHT
+        // var light = new THREE.PointLight(0xFFFFFF, 500, 1000)
+        // light.position.set(0.1, 0.1, 0.1);
+        // scene.add(light);
+
+        // var light = new THREE.PointLight(0xFFFFFF, 500, 1000)
+        // light.position.set(0.1, -0.1, -0.1);
+        // scene.add(light);
+
+        
+        var light = new THREE.PointLight(0xFFFFFF, 2, 1000)
+        light.position.set(1, 1, 12);
+
+        var light2 = new THREE.PointLight(0xFFFFFF, 2, 1000)
+        light.position.set(1, -1, -12);
+
+        let controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableZoom = true;
+        controls.maxPolarAngle = Math.PI;
+        controls.target.set( 0.004, 0.004, 0 );
+
+        var loader = new GLTFLoader();
+        // let model;
+        // let model2;
+        // let model3;
+        
+
+        var dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath('../assets/draco/');
+    loader.setDRACOLoader(dracoLoader);
+
+    loader.load('../assets/DEULER H005.gltf', function (gltf) {
+
+      let modelType = 'DEULER H005';
+      var light = new THREE.PointLight(0xFFFFFF, 2, 1000)
+      light.position.set(1, 1, 12);
+
+      var light2 = new THREE.PointLight(0xFFFFFF, 2, 1000)
+      light.position.set(1, -1, -12);
+
+
+      console.log(gltf)
+
+      if (modelType == 'DUELER HT840') {
+        scene = gltf.scene;
+        //ADD LIGHTS
+        scene.add(light);
+        scene.add(light2);
+        animate();
+      }
+      if (modelType == 'DEULER H005') {
+        scene = gltf.scene;
+
+        animate();
+
+
+        let blenderCamera= gltf.cameras[0];
+        camera.position.x = blenderCamera.parent.position.x;
+        camera.position.y = blenderCamera.parent.position.y;
+        camera.position.z = blenderCamera.parent.position.z;
+
+        camera.aspect = blenderCamera.aspect;
+        camera.fov = blenderCamera.fov;
+        camera.far = blenderCamera.far;
+        camera.near = blenderCamera.near;
+
+        
+      }
+
+      controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableZoom = true;
+        controls.maxPolarAngle = Math.PI;
+
+        controls.target.copy(scene.position)
+      
+
+      
+
+      renderer.render(scene, camera);
+      console.log(scene);
+
+      function animate() {
+        requestAnimationFrame(animate);
+
+        renderer.render(scene, camera);
+      }
+
+    }, undefined, function (error) {
+      console.error(error);
+    });
+
+    const domEvents = new DomEvents(camera, renderer.domElement);
+
+domEvents.addEventListener(scene, 'click', event=>{
+  alert("hola");
+} );
+
+    </script>
+
+</body>
